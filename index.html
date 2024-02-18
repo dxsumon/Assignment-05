@@ -65,7 +65,7 @@
                 <p class="text-[#FFFFFF]">Yes, you can run unit tests and view the results directly within the app. The
                     <br> integrated testing features allow for a streamlined .
                 </p>
-                <button class="btn btn-success text-black py-3 px-8 bg-[#1DD100]">Buy Ticket</button>
+                <a href="#green-line-ticket"><button class="btn btn-success text-black py-3 px-8 bg-[#1DD100]">Buy Ticket</button></a>
             </div>
             <div class="hidden our-info lg:flex justify-center items-center gap-6 lg:mt-[-70px] mt-5">
                 <!-- First -->
@@ -133,8 +133,9 @@
             </div>
         </section>
 
+        <!-- Ticket GreenLine Paribahan Section -->
         <section
-            class="bus-main-function rounded-t-[20px] lg:rounded-t-[88px] border-t-4 border-[#1DC802] bg-[#F7F8F8] p-5">
+            class="bus-main-function rounded-t-[20px] lg:rounded-t-[88px] border-t-4 border-[#1DC802] bg-[#F7F8F8] p-5" id="green-line-ticket">
             <!-- Set title section -->
             <h1 class="lg:text-5xl text-xl raleway-700 mt-7 lg:mt-28 text-center">Green-line Paribahan</h1>
             <p class="text-[18px] text-center mt-6 mb-5 lg:mb-12">Yes, you can run unit tests and view the results
@@ -188,11 +189,11 @@
             </div>
             <!-- Set section end -->
             <!-- Total set select section -->
-            <div class="total-set-section rounded-3xl bg-white p-5">
+            <div class="total-set-section rounded-3xl bg-white p-5 flex justify-center gap-6 mt-6">
 
                 <!-- Right section -->
-                <div>
-                    <div>
+                <div class="w-[50%]">
+                    <div class="space-y-5">
                         <h3 class="raleway-600 text-2xl">Select Your Seat</h3>
                         <hr>
                         <!-- Available Select logo -->
@@ -214,7 +215,7 @@
                         </div>
                     </div>
                     <!-- Set Column Section -->
-                    <div class="w-1/2">
+                    <div class="w-full">
                         <!-- First Section -->
                         <div class="first-set-section flex justify-between items-center m-5 ">
                             <p>A</p>
@@ -273,7 +274,7 @@
                             <button class="btn btn-active bg-[#EAEBEC] border-none px-6">H3</button>
                             <button class="btn btn-active bg-[#EAEBEC] border-none px-6">H4</button>
                         </div>
-                        
+
                         <div class="first-set-section flex justify-between items-center m-5 ">
                             <p>I</p>
                             <button class="btn btn-active bg-[#EAEBEC] border-none px-6">I1</button>
@@ -281,7 +282,7 @@
                             <button class="btn btn-active bg-[#EAEBEC] border-none px-6">I3</button>
                             <button class="btn btn-active bg-[#EAEBEC] border-none px-6">I4</button>
                         </div>
-                        
+
                         <div class="first-set-section flex justify-between items-center m-5 ">
                             <p>J</p>
                             <button class="btn btn-active bg-[#EAEBEC] border-none px-6">J1</button>
@@ -289,13 +290,64 @@
                             <button class="btn btn-active bg-[#EAEBEC] border-none px-6">J3</button>
                             <button class="btn btn-active bg-[#EAEBEC] border-none px-6">J4</button>
                         </div>
-                    
+
                     </div>
                 </div>
                 <!-- Left section For set calculation -->
-                <div class="set-calculation">
-                    <h1>Select Your Seat</h1>
+                <div class="set-calculation w-[50%] space-y-5 p-6">
+                    <h1 class="text-2xl raleway-600">Select Your Seat</h1>
+                    <hr>
+                    <div class="bg-[#F7F8F8] p-6 space-y-5 rounded-xl">
+
+                        <div class="flex justify-between items-center ">
+                            <h1 class="text-xl font-bold">Seat <sup
+                                    class="bg-[#1DD100] text-white px-1 rounded-lg">0</sup></h1>
+                            <h1 class="text-xl font-bold">Class</h1>
+                            <h1 class="text-xl font-bold">Price</h1>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#03071299] text-xl">C2</span>
+                            <span class="text-[#03071299] text-xl">Economoy</span>
+                            <span class="text-[#03071299] text-xl">550</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#03071299] text-xl">C2</span>
+                            <span class="text-[#03071299] text-xl">Economoy</span>
+                            <span class="text-[#03071299] text-xl">550</span>
+                        </div>
+                        <hr>
+                        <div class="total-price-list text-xl font-bold flex justify-between">
+                            <h1>Total Price</h1>
+                            <h1>BDT <span>1100</span></h1>
+                        </div>
+                        <div class="input-field">
+                            <label class="input input-bordered flex items-center gap-2 py-7">
+                                <input type="text" class="grow" placeholder="Have any copupon?" />
+                                <button class="btn bg-[#1DD100] text-white">Apply</button>
+                            </label>
+                        </div>
+                        <div class="flex text-xl font-bold justify-between">
+                            <h1>Grand Total</h1>
+                            <h1>BDT <span>1100</span></h1>
+                        </div>
+                    </div>
+                    <!-- user information -->
+                    <div class="user-info w-full space-y-5">
+                        <h1 class="text-xl font-bold">Passenger Name*</h1>
+                        <input type="text" placeholder="Enter your name" class="input input-bordered input-md w-full"  required />
+                        <h1 class="text-xl font-bold">Phone Number*</h1>
+                        <input type="number" placeholder="Enter your phone number" class="input input-bordered input-md w-full" maxlength="11"  required />
+                        <h1 class="text-xl font-bold">Email Id*</h1>
+                        <input type="email" placeholder="Enter your email id" class="input input-bordered input-md w-full"  required />
+                        <button class="btn bg-[#1DD100] w-full text-white font-bold text-xl">Next</button>
+                        <div class="flex justify-between items-center">
+                            <p class="border-b-2 inline-block font-semibold">Terms and Conditions</p>
+                            <p class="border-b-2 inline-block font-semibold">Cancellation Policy</p>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </section>
     </main>
@@ -303,6 +355,8 @@
 
     </footer>
 
+    <!-- Js all file -->
+<script src="./JS File/app.js"></script>
 </body>
 
 </html>
