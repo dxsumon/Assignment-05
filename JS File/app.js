@@ -1,3 +1,5 @@
+alert('After selected the bus seat then use your coupon code. Other wish you will not get actual discount');
+
 const allBtn = document.getElementsByClassName('all-btn');
 let count = 0;
 
