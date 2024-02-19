@@ -50,6 +50,9 @@ for (const btn of allBtn) {
                             applyInput.classList.add('hidden');
                         })
                     }
+                    else{
+                        applyBtn.setAttribute('disabled', true);
+                    }
                 })
                 // When user select one button then the previous seat name remove and add selected seat name
                 hideElementById();
