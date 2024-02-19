@@ -144,14 +144,14 @@
                 directly within the app. The <br> integrated testing features allow for a streamlined .</p>
             <!-- Set section -->
             <div
-                class="flex flex-col lg:flex-row justify-center items-center bg-[#FFFFFF] rounded-3xl  lg:w-[80%] mx-auto p-5">
+                class="flex flex-col lg:flex-row justify-center items-center bg-[#FFFFFF] rounded-3xl  lg:w-full mx-auto p-5">
                 <!-- Green line logo section -->
                 <div class="left-side-section">
                     <div class="lest-ection flex justify-around items-center">
                         <div class="flex gap-3 items-center">
                             <img class="hidden lg:flex" src="./images/bus-logo.png" alt="">
                             <div>
-                                <h2 class="raleway-700 text-2xl lg:text-3xl">Greenline Paribahan</h2>
+                                <h2 class="raleway-700 text-xl lg:text-3xl">Greenline Paribahan</h2>
                                 <p>Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                     </div>
                     <!-- This is the set left section -->
                     <div
-                        class="time-sedule-section bg-[#F7F8F8] mx-auto p-6 rounded-2xl border-2 border-[#33D519] space-y-6 mt-6 w-full">
+                        class="time-sedule-section bg-[#F7F8F8] mx-auto p-4 rounded-2xl border-2 border-[#33D519] space-y-6 mt-6 w-full">
                         <div class="flex justify-between">
                             <p>Route</p>
                             <p class="raleway-600">Dhaka-Sylhet</p>
@@ -175,7 +175,7 @@
                             <p class="raleway-600">9:00 pm</p>
                         </div>
                         <hr>
-                        <div class="flex flex-col lg:flex-row lg:gap-6 space-y-3 justify-between items-center">
+                        <div class="flex flex-col lg:flex-row lg:gap-6 space-y-3 justify-center items-center w-full">
                             <p class="py-3 px-5 bg-[#EAEBEC] rounded-xl w-full">Boarding Point - Laxmipur</p>
                             <p class="py-3 px-5 bg-[#EAEBEC] rounded-xl w-full">Dropping Point - Bogura</p>
                             <p class="py-3 px-5 bg-[#EAEBEC] rounded-xl w-full">Est. Time - 11 Hour</p>
@@ -191,10 +191,10 @@
             </div>
             <!-- Set section end -->
             <!-- Total set select section -->
-            <div class="total-set-section rounded-3xl bg-white p-5 flex justify-center gap-6 mt-6">
+            <div class="total-set-section rounded-3xl bg-white p-5 flex lg:flex-row flex-col justify-around gap-6 mt-6">
 
                 <!-- Right section -->
-                <div class="w-[50%]">
+                <div class="flex-1">
                     <div class="space-y-3">
                         <h3 class="raleway-600 text-2xl">Select Your Seat</h3>
                         <hr>
@@ -300,7 +300,7 @@
                     </div>
                 </div>
                 <!-- Left section For set calculation -->
-                <div class="set-calculation w-[50%] space-y-3 p-6">
+                <div class="set-calculation flex-1 space-y-3 p-6">
                     <h1 class="text-2xl raleway-600">Select Your Seat</h1>
                     <hr>
                     <div class="bg-[#F7F8F8] p-6 space-y-5 rounded-xl">
@@ -359,11 +359,11 @@
                         <!-- The button to open modal -->
                         <label for="my_modal_6" class="btn w-full bg-[#1DD100] text-white text-2xl">Next</label>
                         <input type="checkbox" id="my_modal_6" class="modal-toggle" />
-                        <div class="modal" role="dialog">
+                        <div class="modal w-[70%] mx-auto" role="dialog">
                             <div class="modal-box">
                                 <div class="flex flex-col justify-center items-center space-y-3">
-                                    <img src="./images/success.png" alt="">
-                                    <h1 class="text-[#27AE60] text-2xl font-bold text-center">SUCCESS</h1>
+                                    <img class="w-[20%]" src="./images/success.png" alt="">
+                                    <h1 class="text-[#27AE60] text-xl lg:text-2xl font-bold text-center">SUCCESS</h1>
                                     <p class="text-xl text-black font-semibold text-center">Thank you for Booking Our Bus Seats. <br>
                                         We are working hard to find the best service and deals for you.
                                     </p>
@@ -384,9 +384,37 @@
             </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
+        <footer class="footer p-10 bg-[#eeeeeec7] bg-base-200 text-base-content lg:mt-24">
+            <nav>
+              <h6 class="footer-title text-2xl ">Green-line Paribahan</h6> 
+              <p class="text-xl">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </nav> 
+            <nav>
+              <h6 class="footer-title">Company</h6> 
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav> 
+            <nav>
+              <h6 class="footer-title">Legal</h6> 
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav> 
+            <form>
+              <h6 class="footer-title">Newsletter</h6> 
+              <fieldset class="form-control w-80">
+                <label class="label">
+                  <span class="label-text ">Enter your email address</span>
+                </label> 
+                <div class="join">
+                  <input type="text"  placeholder="username@site.com" class="input input-bordered join-item" /> 
+                  <button class="btn bg-[#1DD100] text-white font-bold  join-item">Subscribe</button>
+                </div>
+              </fieldset>
+            </form>
+          </footer>
 
     <!-- Js all file -->
     <script src="./JS File/utility.js"></script>
