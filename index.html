@@ -202,11 +202,15 @@
                         <div class="logo flex justify-between items-center p-4">
                             <div class="flex gap-2">
                                 <img src="./images/seat-gray.png" alt="">
-                                <p class="text-[#03071280] font-semibold bg-[#E5E6E7]  py-1 px-4 border-2 border-[#e4e6e4]">Available <span id="available-seat">40</span></p>
+                                <p
+                                    class="text-[#03071280] font-semibold bg-[#E5E6E7]  py-1 px-4 border-2 border-[#e4e6e4]">
+                                    Available <span id="available-seat">40</span></p>
                             </div>
                             <div class="flex gap-2">
                                 <img src="./images/seat-green-filled.png" alt="">
-                                <p class="text-[#1DD100] font-semibold bg-[#E8FAE5] py-1 px-4 border-2 border-[#1DD100]">Selected <span id="selected-seat">0</span></p>
+                                <p
+                                    class="text-[#1DD100] font-semibold bg-[#E8FAE5] py-1 px-4 border-2 border-[#1DD100]">
+                                    Selected <span id="selected-seat">0</span></p>
                             </div>
                         </div>
                         <hr>
@@ -322,17 +326,17 @@
                             </div>
                         </div>
                         <div id="add-selected-seat" class="text-[#03071299] text-xl space-y-3">
-                            
+
                         </div>
                         <hr>
                         <div class="total-price-list text-xl font-bold flex justify-between">
                             <h1>Total Price</h1>
                             <h1>BDT <span id="total-price">1100</span></h1>
                         </div>
-                        <div class="input-field">
+                        <div id="apply-input" class="input-field">
                             <label class="input input-bordered flex items-center gap-2 py-7">
                                 <input id="coupon-code" type="text" class="grow" placeholder="Have any coupon?" />
-                                <button id="apply-btn" class="btn bg-[#1DD100] text-white" disabled >Apply</button>
+                                <button id="apply-btn" class="btn bg-[#1DD100] text-white" disabled>Apply</button>
                             </label>
                         </div>
                         <div class="flex text-xl font-bold justify-between">
@@ -351,7 +355,25 @@
                         <h1 class="text-xl font-bold">Email Id*</h1>
                         <input type="email" placeholder="Enter your email id"
                             class="input input-bordered input-md w-full" required />
-                        <button class="btn bg-[#1DD100] w-full text-white font-bold text-xl">Next</button>
+
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6" class="btn w-full bg-[#1DD100] text-white text-2xl">Next</label>
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                        <div class="modal" role="dialog">
+                            <div class="modal-box">
+                                <div class="flex flex-col justify-center items-center space-y-3">
+                                    <img src="./images/success.png" alt="">
+                                    <h1 class="text-[#27AE60] text-2xl font-bold text-center">SUCCESS</h1>
+                                    <p class="text-xl text-black font-semibold text-center">Thank you for Booking Our Bus Seats. <br>
+                                        We are working hard to find the best service and deals for you.
+                                    </p>
+                                    <p class="text-xl text-black text-center">Shortly you will find a confirmation in your email.</p>
+                                </div>
+                                <div class="modal-action">
+                                    <label for="my_modal_6" class="btn w-[70%] mx-auto bg-[#27AE60] text-white text-xl font-semibold rounded-full">Continue</label>
+                                </div>
+                            </div>
+                        </div>
                         <div class="flex justify-between items-center">
                             <p class="border-b-2 inline-block font-semibold">Terms and Conditions</p>
                             <p class="border-b-2 inline-block font-semibold">Cancellation Policy</p>

@@ -44,6 +44,8 @@ for (const btn of allBtn) {
                                 const grandTotalPrice2 = document.getElementById('grand-total-price')
                                 grandTotalPrice2.innerText = grandTotalUpdate2;
                             }
+                            const applyInput = document.getElementById('apply-input');
+                            applyInput.classList.add('hidden');
                         })
                     }
                 })
