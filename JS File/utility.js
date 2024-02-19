@@ -41,3 +41,14 @@ function addSelectedName(){
     div.classList.add('items-center');
     addSelectedSeat.appendChild(div);
 }
+
+function enableNextButton(){
+    const numberInput = document.getElementById('phone-number-input');
+    const modal = document.getElementById('modal-btn');
+    if(numberInput.value !== ''){
+        modal.removeAttribute('disabled');
+    }
+    else{
+        modal.setAttribute('disabled', true);
+    }
+}
